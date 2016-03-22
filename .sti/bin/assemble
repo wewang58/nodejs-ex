@@ -26,7 +26,7 @@ set -e
 #fi
 if [ "$(ls -a /tmp/artifacts/ 2>/dev/null)" ]; then
   echo "Restoring build artifacts"
-  cp -Rf /tmp/artifacts/.npm/* $HOME/.npm/
+  cp -Rf /tmp/artifacts/ $HOME/
 fi
 echo "---> Installing application source"
 cp -Rf /tmp/src/. ./
